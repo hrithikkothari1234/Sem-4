@@ -7,8 +7,8 @@ sorted_list = []
 
 line = input("Enter the list of tuples: ")
 while(line != ''):
-	list_tups.append(tuple(line.split()))
-	line = input()
+    list_tups.append(tuple(line.split()))
+    line = input()
  
 print(list_tups)
 
