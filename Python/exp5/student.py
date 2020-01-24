@@ -12,7 +12,6 @@ class student:
 			grade = "B"
 		elif self.score >= 40 and self.score <=59:
 			grade = "C"
-		
 		else:
 			grade = "D"
 		print(grade)
