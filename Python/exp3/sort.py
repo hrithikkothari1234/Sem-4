@@ -12,5 +12,5 @@ while(line != ''):
  
 print(list_tups)
 
-list_tups.sort(key = lambda x: x[0])
+list_tups.sort(key = lambda x: x[-1])
 print("Sorted list is:",list_tups)
