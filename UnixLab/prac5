@@ -1,0 +1,35 @@
+$ df -k
+Filesystem            1K-blocks      Used Available Use% Mounted on
+/dev/sda5             274990368  22989696 238008892   9% /
+none                          4         0         4   0% /sys/fs/cgroup
+udev                    1999860         4   1999856   1% /dev
+tmpfs                    401876      1076    400800   1% /run
+none                       5120         0      5120   0% /run/lock
+none                    2009376       192   2009184   1% /run/shm
+none                     102400        44    102356   1% /run/user
+7.1.1.147:/home/staff 476578840 149681448 302665560  34% /home/staff
+/dev/sda2             102297596  38637708  63659888  38% /media/universe/4682C5A082C594B9
+
+$ du Documents
+110000	Documents
+
+$ du Videos
+4	Videos
+
+$ ls -a // Display Hidden Files
+.		     franky.pcap       .pgadmin3
+..		     .gconf	       .pgadmin_histoqueries
+123456.pcap	     .gimp-2.8	       pgadmin.log
+12345.pcap	     .git	       .pgpass
+1234.pcap	     .gitconfig        Pictures
+1.tcp		     glassfish-4.0     .pip
+7109		     .gnome2	       .pki
+7474		     .gnome2_private   pox
+
+$ mount
+/dev/sda5 on / type ext4 (rw,errors=remount-ro)
+proc on /proc type proc (rw,noexec,nosuid,nodev)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/cgroup type tmpfs (rw)
+none on /sys/fs/fuse/connections type fusectl (rw)
+

@@ -1,0 +1,60 @@
+->ifconfig
+eth0      Link encap:Ethernet  HWaddr 40:a8:f0:44:8a:11  
+          inet addr:8.8.6.7  Bcast:8.8.6.31  Mask:255.255.255.224
+          inet6 addr: fe80::42a8:f0ff:fe44:8a11/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2351 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1589 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2058356 (2.0 MB)  TX bytes:197169 (197.1 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:159 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:159 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:11415 (11.4 KB)  TX bytes:11415 (11.4 KB)
+
+virbr0    Link encap:Ethernet  HWaddr 9e:a0:6e:3b:a9:b8  
+          inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+
+->ping 8.8.5.1
+PING 8.8.5.1 (8.8.5.1) 56(84) bytes of data.
+64 bytes from 8.8.5.1: icmp_seq=1 ttl=64 time=0.184 ms
+
+->traceroute 8.8.5.8
+traceroute to 8.8.5.8 (8.8.5.8), 30 hops max, 60 byte packets
+ 1  8.8.6.1 (8.8.6.1)  0.154 ms  0.131 ms  0.118 ms
+ 2  * * *
+ 3  * * *
+
+->netstat
+[ ]         STREAM     CONNECTED     51456    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     29073    @/tmp/dbus-9HDrULjDb2
+unix  3      [ ]         STREAM     CONNECTED     26984    
+
+->sudo tcpdump -w 1234.pcap -i eth0
+[sudo] password for universe: 
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+^C1264 packets captured
+1268 packets received by filter
+0 packets dropped by kernel
+
+->tcpdump -r 1234.pcap
+win 260, options [nop,nop,TS val 1667951355 ecr 210380], length 0
+09:21:59.342912 IP 809f.fragnel.edu.in.42653 > 7.1.1.12.3128: Flags [P.], seq 117:141, ack 79, win 1324, options [nop,nop,TS val 210381 ecr 1667951355], length 24
+etc etc etc....
+
+->hostname
+809f.fragnel.edu.in
+
+->nslookup google.com
+
