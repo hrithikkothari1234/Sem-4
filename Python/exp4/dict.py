@@ -36,7 +36,7 @@ n = int(input("Enter value of n"))
 d1=generate_dict(n)
 print(d1)
 
-merge_dict(d1,{6:36,7:49,8:64})
+merge_dict(d1,{5:25,6:36,7:49,8:64})
 sort_dict(d1)
 remove_key(d1,5)
 highest_three(d1)
