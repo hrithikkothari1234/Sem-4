@@ -27,6 +27,14 @@ class myMatrix:
 		print(self.matrix)
 		print("\n")
 
+	def gen_inverse(self):
+		"""
+		returns matrix object with matrix inverse of current obj
+		"""
+		inv_obj = myMatrix()
+		inv_obj.matrix = np.linalg.inv(self.matrix)
+		return inv_obj
+
 matr1 = myMatrix(3,3)
 matr2 = myMatrix(3,3)
 
@@ -41,4 +49,7 @@ matr2.display_matr()
 
 matr1.mult(matr2)
 matr1.display_matr()
+
+inv_obj = matr2.gen_inverse()
+inv_obj.display_matr()
 
