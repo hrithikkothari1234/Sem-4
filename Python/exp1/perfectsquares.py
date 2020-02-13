@@ -3,7 +3,7 @@ To Find all Numbers in a Range which are Perfect Squares and
 Sum of all Digits in the Number is Less than 10
 """
 def perfect_square(val):
-    return int(val**(1/2) + 0.5) ** 2 == val
+    return int(val**(1/2)) ** 2 == val
     
 def sum_lessthan_10(val):
     sum = 0
