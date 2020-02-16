@@ -1,0 +1,71 @@
+Psuedo code for Producer Consumer Problems using sleep and wakeup system calls
+
+#define N 100 //maximum slots in buffer   
+
+#define count=0 //items in the buffer   
+
+void producer (void)   
+
+{   
+
+    int item;   
+
+    while(True)  
+
+    {  
+
+        item = produce_item(); //producer produces an item   
+
+        if(count == N) //if the buffer is full then the producer will sleep  
+
+            Sleep();   
+
+        insert_item (item); //the item is inserted into buffer  
+
+        countcount=count+1;   
+
+        if(count==1) //The producer will wake up the   
+
+        //consumer if there is at least 1 item in the buffer   
+
+        wake-up(consumer);  
+
+    }  
+
+}  
+
+  
+
+void consumer (void)  
+
+{  
+
+    int item;   
+
+    while(True)  
+
+    {  
+
+        {     
+
+            if(count == 0) //The consumer will sleep if the buffer is empty.   
+
+            sleep();   
+
+            item = remove_item();   
+
+            countcount = count - 1;   
+
+            if(count == N-1) //if there is at least one slot available in the buffer   
+
+            //then the consumer will wake up producer  
+
+            wake-up(producer);   
+
+            consume_item(item); //the item is read by consumer.   
+
+        }  
+
+    }  
+
+}  

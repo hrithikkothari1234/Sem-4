@@ -1,0 +1,9 @@
+https://www.tutorialspoint.com/operating_system/os_processes.htm
+(refer class notes for detailed explanation of 5 state and 7 state process state transition concepts)
+
+https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/
+https://www.tutorialspoint.com/what-is-process-control-block-pcb
+
+https://www.tutorialspoint.com/different-types-of-process-schedulers
+
+(For different scheduling algorithms refer class notes)

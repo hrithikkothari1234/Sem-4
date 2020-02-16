@@ -1,0 +1,13 @@
+http://modern-os.blogspot.com/2011/11/mutual-exclusion-with-busy-waiting.html
+
+http://modern-os.blogspot.com/2011/11/critical-regions.html
+
+http://modern-os.blogspot.com/2011/11/interprocess-communication.html
+
+Peterson's Algo
+
+http://modern-os.blogspot.com/2011/11/sleep-and-wakeup.html
+
+TSL psuedocode
+
+Psuedo code for Producer Consumer Problems using sleep and wakeup system calls

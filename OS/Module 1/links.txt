@@ -1,0 +1,21 @@
+https://www.tutorialspoint.com/operating_system/os_overview.htm
+
+https://www.tutorialspoint.com/operating_system/os_types.htm
+
+https://www.tutorialspoint.com/operating_system/os_services.htm
+
+https://www.tutorialspoint.com/operating_system/os_properties.htm
+
+https://www.geeksforgeeks.org/monolithic-kernel-and-key-differences-from-microkernel/ 
+(diag important)
+
+https://www.geeksforgeeks.org/microkernel-in-operating-systems/
+
+https://www.geeksforgeeks.org/dual-mode-operations-os/
+
+https://www.geeksforgeeks.org/difference-between-user-level-thread-and-kernel-level-thread/
+https://www.tutorialspoint.com/user-level-threads-and-kernel-level-threads
+
+https://www.tutorialspoint.com/what-are-system-calls-in-operating-system
+
+https://www.geeksforgeeks.org/difference-between-multitasking-multithreading-and-multiprocessing/
