@@ -99,7 +99,7 @@ c. u is a subset of v
 d. v is a subset of u 
 """
 
-# Q7 - Ans D
+# Q7 - Ans C
 """
 Suppose u and v both denote sets in Python. Under what condition can we guarantee
 that u - (u - v) == v? (Select the correct choice and justify your answer)
