@@ -12,5 +12,9 @@ while(line != ''):
  
 print(list_tups)
 
-list_tups.sort(key = lambda x: x[-1])
+for i in range(0, len(list_tups)):
+        for j in range(0, len(list_tups)-1):
+            if int(list_tups[j][-1]) > int(list_tups[j+1][-1]):
+                list_tups[j], list_tups[j+1] = list_tups[j+1], list_tups[j]
+
 print("Sorted list is:",list_tups)
