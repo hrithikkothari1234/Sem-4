@@ -8,29 +8,19 @@ class myMatrix:
 		self.matrix = np.random.random((rows, cols))
 
 	def add(self, add_matr):
-		for i in range(0, self.rows):
-			for j in range(0, self.cols):
-				self.matrix[i][j] = self.matrix[i][j] + add_matr.matrix[i][j]
+		self.matrix = np.add(self.matrix, add_matr.matrix)
 	
 	def subtr(self, subtr_matr):
-		for i in range(0, self.rows):
-			for j in range(0, self.cols):
-				self.matrix[i][j] = self.matrix[i][j] - subtr_matr.matrix[i][j]
+		self.matrix = np.subtract(self.matrix, subtr_matr.matrix)
 
 	def mult(self, multi_matr):
-		for i in range(0, self.rows):
-			for j in range(0, self.cols):
-				for k in range(0, self.cols):
-					self.matrix[i][j] = self.matrix[i][k] * multi_matr.matrix[k][j]	
-	
+		self.matrix = np.multiply(self.matrix, multi_matr.matrix)
+
 	def display_matr(self):
 		print(self.matrix)
 		print("\n")
 
 	def gen_inverse(self):
-		"""
-		returns matrix object with matrix inverse of current obj
-		"""
 		inv_obj = myMatrix()
 		inv_obj.matrix = np.linalg.inv(self.matrix)
 		return inv_obj
@@ -43,17 +33,11 @@ class sqMatrix(myMatrix):
 			print("Not a square Matrix")
 
 	def gen_inverse(self):
-		"""
-		returns matrix object with matrix inverse of current obj
-		"""
 		inv_obj = sqMatrix()
 		inv_obj.matrix = np.linalg.inv(self.matrix)
 		return inv_obj
 
 	def eigenvals(self):
-		"""
-		returns array with eigen values in current matr obj
-		"""
 		print(np.linalg.eig(self.matrix))
 		
 matr1 = myMatrix(3,3)
