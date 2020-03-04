@@ -81,7 +81,7 @@ def count(l1=[]):
             count=count+1
     return count
 
-l1 = ["hello","world","abc","def","ded","hh","1231"]
+l1 = ["abca","world","abc","def","ded","hh","1231"]
 print(count(l1))
 
 # Q3
