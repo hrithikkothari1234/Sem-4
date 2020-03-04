@@ -25,13 +25,56 @@ math.pi
 ## mathematical constant e (2.71828...)
 math.e
 
+"""
+Data structures :
+1) List :
+    In Python programming, a list is created by placing all the items (elements) inside a square bracket [ ],
+    separated by commas.
+    It can have any number of items and they may be of different types (integer, float, string etc.).
+    Also, a list can even have another list as an item.
+    Lists are mutable.
+
+    eg.
+    ->l1=[1,2,3]
+    ->l1.append(4)
+    ->l1.remove(2)
+    ->l1.pop()
+
+2) Tuple :
+    A Tuple is a collection of Python objects separated by commas.
+    In someways a tuple is similar to a list in terms of indexing,
+    nested objects and repetition but a tuple is immutable unlike lists which are mutable.
+
+    eg.
+    ->t1=(1,2,3)
+    ->t1.insert(4)
+    ->t1.count(2)
+
+3) Sets :
+    A Set is an unordered collection data type that is iterable, mutable and has no duplicate elements.
+    Python’s set class represents the mathematical notion of a set.
+    The major advantage of using a set, as opposed to a list,
+    is that it has a highly optimized method for checking whether a specific element is contained in the set.
+    This is based on a data structure known as a hash table.
+
+    eg.
+    ->s1={1,2,3}
+    ->s1.add(5)
+    ->s1=set([1,2,3,4,4,4])
+
+4) Dictionary :
+    A dictionary is a collection which is unordered, changeable and indexed.
+    In Python dictionaries are written with curly brackets, and they have keys and values.
+    They are basically key-value pairs just like JSON(Javascript object notation).
+
+    eg.
+    ->d1={1:1,2:4,3:9,4:16}
+    ->d1={(1,2,3):[1,2,3,4],(5,6,7):[1,2,3,3]}
+"""
+
 # Q2
 
 def count(l1=[]):
-    """
-    returns the count of the number of strings where the string length
-    is 2 or more and the first and last chars of the string are the same. 
-    """
     count=0
     for i in l1:
         if len(i)>=2 and i[0] == i[-1]:
@@ -44,10 +87,6 @@ print(count(l1))
 # Q3
 
 def front_x(x=[]):
-    """
-    return a list with the strings in sorted order, except group all the
-    strings that begin with 'x' first.  
-    """
     temp1 = [] 
     for i in x:
         if i.startswith('x'):
@@ -89,14 +128,20 @@ print(transpose([[1,4,9]]))
 print(transpose([[1,3,5],[2,4,6]]))
 print(transpose([[1,1,1],[2,2,2],[3,3,3]]))
 
-# Q6 - Ans B
+# Q6 - Ans D
 """
 Suppose u and v both have values of type set and u^v == u - v. From this we can
 conclude that: (Select the correct choice and justify your answer)
 a. u and v are identical
-b. u and v are disjoint -- Correct ans
+b. u and v are disjoint 
 c. u is a subset of v
-d. v is a subset of u 
+d. v is a subset of u -- Correct ans
+
+Justification :
+u={1,2,3,4,5,6}
+v={1,2,3,4}
+u-v={5,6}
+u^v={5,6} == u-v (Hence Proved).
 """
 
 # Q7 - Ans C
