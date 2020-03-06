@@ -1,5 +1,4 @@
 ## Part 1
-"""
 try:
     #Index Error
     l1=[0,1,2,3]
@@ -37,7 +36,7 @@ except IOError:
 
 except AssertionError as msg:
     print(msg)
-"""
+    
 ## Part 2
 class DefaulterError(Exception):
 
