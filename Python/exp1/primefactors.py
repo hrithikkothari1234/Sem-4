@@ -26,6 +26,5 @@ for i in range(2, int(val/2)):
 for i in range(0, len(factors)):
     if(check_prime(factors[i])):
         primefactors.append(factors[i])
-    i=i+1  
         
 print(primefactors)
