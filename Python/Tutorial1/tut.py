@@ -108,17 +108,18 @@ while user_str!='':
 if len(l)%2!=0:
     print("Enter 2*n lines plis?")
 else:
-    n=len(l)  #Taking length of input list
-    a=n//2  #divide this list in two parts
+    n=len(l)  
+    a=int(n/2)
     l1=l[a:]
     l2=l[:a]
-    for i in l1:   #printing the list
+    
+    for i in l1:
         print(i)
     for i in l2:
         print(i)
 
 # Q6
-
+"""
 for i in range(101):
     if i%3==0 and i%5!=0:
         print('fizz')
@@ -133,3 +134,4 @@ for i in range(101):
 # Shorter fizzbuzz: 56 Characters.
 for i in range(101):
 	print("Fizz"[i%3*4:]+"Buzz"[i%5*4:] or i)
+    """
