@@ -99,26 +99,23 @@ print(sublist([2,2,4],[2,2,3,4,5]))
 # Q5
 
 user_str = input("Enter 2*n lines")
-l1=[]
-l2=[]
+l=[]
 
 while user_str!='':
-    l1.append(user_str)
+    l.append(user_str)
     user_str=input()
 
-if len(l1)%2!=0:
+if len(l)%2!=0:
     print("Enter 2*n lines plis?")
 else:
-    for i in range(0, len(l1), 2):
-        l2.append(l1[i])
-        l1.remove(l1[i])
-
-    l1.reverse()
-    l2.reverse()
-
-    for x,y in zip(l1, l2):
-        print(x)
-        print(y)
+    n=len(l)  #Taking length of input list
+    a=n//2  #divide this list in two parts
+    l1=l[a:]
+    l2=l[:a]
+    for i in l1:   #printing the list
+        print(i)
+    for i in l2:
+        print(i)
 
 # Q6
 
