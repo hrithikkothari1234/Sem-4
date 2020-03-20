@@ -92,9 +92,6 @@ print(sublist([2,2,3],[2,2,3,4,5]))
 
 print(sublist([2,2,4],[2,2,3,4,5]))
 
-print(sublist([2,2,3],[2,2,3,4,5]))
-
-print(sublist([2,2,4],[2,2,3,4,5]))
 
 # Q5
 
@@ -119,7 +116,6 @@ else:
         print(i)
 
 # Q6
-"""
 for i in range(101):
     if i%3==0 and i%5!=0:
         print('fizz')
@@ -134,4 +130,3 @@ for i in range(101):
 # Shorter fizzbuzz: 56 Characters.
 for i in range(101):
 	print("Fizz"[i%3*4:]+"Buzz"[i%5*4:] or i)
-    """
