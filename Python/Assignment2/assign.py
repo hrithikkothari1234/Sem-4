@@ -92,7 +92,7 @@ import MySQLdb
 from numpy.random import randint 
 
 try:
-    con=MySQLdb.connect('localhost','root','agent viper','socialapp')
+    con=MySQLdb.connect('localhost','root','pw','db')
 
     c=con.cursor()
     sql = "CREATE TABLE IF NOT EXISTS FIFA (scores int)"
