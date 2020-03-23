@@ -1,0 +1,29 @@
+Transport layer basics and reliability
+https://youtu.be/8-3CSAkscYU
+
+https://youtu.be/qclg6FY-FGM
+
+Tcp header
+https://youtu.be/c8aet11HNxg
+
+https://youtu.be/hsNuqtfxgRI
+
+Tcp three way handshake protocol...
+https://youtu.be/qIEHUUt2Wfc
+
+Tcp congestion control techniques
+https://youtu.be/SHO9eeWxPxY
+
+Tcp timers
+https://youtu.be/8NxJGHXDOGc
+
+Tcp socket programming
+https://youtu.be/x7obJLN7FcQ
+
+Udp header
+https://youtu.be/f1y25BfOH9I
+
+Problems based in TCP
+https://www.gatevidyalay.com/tcp-protocol-tcp-header-practice-problems/
+
+
