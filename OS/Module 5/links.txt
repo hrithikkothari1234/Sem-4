@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=aKmuGwHj3Cw 
+(also numericals)
+
+https://www.geeksforgeeks.org/hard-disk-drive-hdd-secondary-memory/
+
+https://www.youtube.com/watch?v=034pt6kFLe8
+(also numericals on various algos of disk scheduling)
+
+https://www.youtube.com/watch?v=0Q-hvtonCfo
+
+https://www.youtube.com/watch?v=gQqZ7SQ2Yfw
+
+https://www.youtube.com/watch?v=Au9BxxLEm5M
+
+https://www.youtube.com/watch?v=5hKKzoLk1RY
+
+https://www.youtube.com/watch?v=XqE8hka8ayY
+
+https://www.javatpoint.com/os-attributes-of-the-file
+
+Attributes of the File, Operations on the File, File Access Methods,
+Directory Structure Single level Directory, Two level Directory, Tree structured Directory Acyclic Graph Directories 
+File System,File System Structure, Directory Implementation, Allocation Methods: Contiguous Allocation, Linked List Allocation, File Allocation Table Indexed Allocation, Linked Index Allocation,
+Inode,
+Free space Management,
+Disk Scheduling: FCFS Scheduling, SSTF Scheduling, SCAN and C-SCAN, Look and C-Look, (Video links are also provided), 
+Numerical on SSTF, Numerical on Disk
+
+https://www.javatpoint.com/dbms-raid
+
+https://docs.oracle.com/cd/E19455-01/805-7228/6j6q7ueup/index.html
+
+https://www.os-book.com/OS9/practice-exer-dir/12-web.pdf
+
+https://tutorialspoint.dev/computer-science/operating-systems/operating-system-swap-space
+
+
+
