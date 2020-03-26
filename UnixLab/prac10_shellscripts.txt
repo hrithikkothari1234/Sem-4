@@ -1,0 +1,83 @@
+a) Shell script program to check whether given file is a directory or not.
+
+if [ -d /home/testdir/ ];
+then
+    echo "/home/tutorialkart is directory"
+else
+    echo "/home/tutorialkart is not a directory"
+fi
+
+b) Shell script program to count number of files in a Directory.
+
+if [ -d "$@" ]; then
+    echo "Number of files is $(find "$@" -type f | wc -l)"
+else
+    echo "[ERROR]  Please provide a directory."
+    exit 1
+fi
+
+c) Shell script program to copy contents of one file to another.
+
+cat filename >> newfilename
+
+d) sed command to print duplicated lines of Input.
+
+$ sort file | sed '$!N; s/^\(.*\)\n\1$/\1/; t; D'
+
+e) sed command for Replacing or substituting string
+
+$ sed 's/unix/linux/' file.txt
+
+Above sed command replaces the word "unix" with "linux" in the file.
+
+f) sed command for Replacing the nth occurrence of a pattern in a line
+
+$ sed 's/unix/linux/2' file.txt
+
+Use the /n to replace the nth of a pattern in a line. 
+Above command replaces the second occurrence of the word "unix" with "linux"
+
+g) sed command for Parenthesize first character of each word
+
+$ echo "Hello From The Other Side" | sed -E 's/(\<.)/(\1)/g'
+
+h) sed command for Replacing string on a specific line number
+
+sed -i '34s/AAA/BBB/' file_name
+
+i) sed command for Deleting lines from a particular file(particular line,
+last line, within range, pattern matching)
+
+-> Based on Position in File
+Here N indicates Nth line in a file. 
+
+$ sed 'Nd' file
+
+-> Delete last line
+
+$ sed '$d' file
+
+-> Delete range of lines
+
+$ sed 'm,nd' file
+
+-> Delete empty lines or blank lines
+
+$ sed '/^$/d' file
+
+-> Based on Pattern Match
+
+(Delete lines that begin with specified character)
+$ sed '/^u/d' file
+
+(Delete lines that end with specified character)
+$ sed '/x$/d' file
+
+(Delete lines which are in upper case or capital letters)
+$ sed '/^[A-Z]*$/d' file
+
+(Delete lines that contain a pattern)
+$ sed '/debian/d' file
+
+(Delete last line only if it contains the pattern)
+$ sed '${/ubuntu/d;}' file
