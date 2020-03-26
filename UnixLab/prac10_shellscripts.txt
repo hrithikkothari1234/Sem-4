@@ -2,9 +2,9 @@ a) Shell script program to check whether given file is a directory or not.
 
 if [ -d /home/testdir/ ];
 then
-    echo "/home/tutorialkart is directory"
+    echo "/home/testdir is directory"
 else
-    echo "/home/tutorialkart is not a directory"
+    echo "/home/testdir is not a directory"
 fi
 
 b) Shell script program to count number of files in a Directory.
